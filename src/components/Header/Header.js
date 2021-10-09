@@ -19,8 +19,8 @@ const Header = () => {
                     : <span style={{ color: 'white' }}>Please Login Or Create Account</span>}
                 {
                     user.email ?
-                        <NavLink to="/logout">Log Out</NavLink> :
-                        <NavLink onClick={logOut} to="/login">Login</NavLink>
+                        <button onClick={logOut}>Log Out</button> :
+                        <NavLink to="/login">Login</NavLink>
 
                 }
                 <NavLink to="/register">Register</NavLink>
